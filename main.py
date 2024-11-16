@@ -40,8 +40,21 @@ def main():
 
     
    
+###IMPROVEMENTS:
+'''
+a) Don't use int/float, but instead extract numbers after BL and WL:
+    advantages: i) no in between float (comment o.a.) can disrupt 
+                ii) on rare cases the times are an integer after all, which breaks the code completely
+                iii) I can immediately separate white and black moves and need ne extra for-loop
+b) No need to do the 'time used' -3600 - time differences are the same anyway
+c) Maybe mark the move when a player goes into byo-yomi
+d) breaks in byo-yomi, when a new byo-yomi period starts (-300's fault?)
+e) Code atm only is meant for canadian byo-yomi 
+    --> script that works for every kind of byo-yomi possible on kgs?
+    --> otherwise separate ones
 
-
+'''
+###IMPROVEMENTS END
 
 
 if __name__ == "__main__":
